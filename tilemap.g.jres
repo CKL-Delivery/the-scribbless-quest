@@ -1,0 +1,29 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwNDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNzA0MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwNDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNzA0MDgwODA4MDEwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDQwODA4MDgwMTAxMDAwMDAwMDAwMDAwMDAwMDAwMDYwNDA4MDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwNzA0MDgwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDMwMzAzMDQwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDAwMzAzMDMwNDAxMDEwMTAxMDEwMDAwMDAwMDAwMDAwMDAzMDMwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMzAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAzMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDMwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMjAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.swamp.swampTile1",
+            "sprites.dungeon.darkGroundCenter",
+            "sprites.dungeon.hazardLava1",
+            "sprites.builtin.field0",
+            "sprites.dungeon.buttonOrange",
+            "sprites.dungeon.buttonTeal",
+            "sprites.dungeon.buttonPink",
+            "sprites.swamp.swampTile2"
+        ],
+        "displayName": "level1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
