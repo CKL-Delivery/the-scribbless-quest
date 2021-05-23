@@ -1,14 +1,30 @@
 namespace SpriteKind {
     export const NPC = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
+    scene.setBackgroundColor(13)
+    tiles.setTilemap(tilemap`level5`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile`)
+    mySprite2.destroy()
+    mySprite3.destroy()
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPink, function (sprite, location) {
     mySprite.setPosition(10, 9)
     tiles.setTilemap(tilemap`level2`)
+    game.showLongText("Walk up to the blue scribble and press the A button to talk to him", DialogLayout.Bottom)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
+    tiles.setTilemap(tilemap`level6`)
+    scene.setBackgroundColor(9)
+    tiles.placeOnRandomTile(mySprite, assets.tile`Door part 1`)
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.overlapsWith(mySprite3)) {
         game.splash("Hi! I heard you two talking")
-        game.splash("Here's the sword!")
+        game.splash("I actually already ", "Defeated the monster...")
+        game.splash("But you can still have the sword!")
+        tiles.setTilemap(tilemap`level4`)
+        game.showLongText("Go to the door", DialogLayout.Bottom)
     }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -18,6 +34,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         game.splash("AH!!! I'm scared just thinking about it!", "Can you help us?")
         game.splash("There's this yellow guy.", "He's the only one of us with a sword")
         game.splash("Go talk to him.", "Save us!")
+        game.showLongText("Walk up to the yellow scribble and press the B button to talk to him", DialogLayout.Bottom)
         tiles.setTilemap(tilemap`level3`)
     }
 })
@@ -53,6 +70,8 @@ mySprite = sprites.create(img`
     `, SpriteKind.Player)
 mySprite.setPosition(14, 16)
 controller.moveSprite(mySprite)
+scene.setBackgroundColor(0)
+info.setLife(5)
 tiles.setTilemap(tilemap`level1`)
 scene.cameraFollowSprite(mySprite)
 mySprite2 = sprites.create(img`
